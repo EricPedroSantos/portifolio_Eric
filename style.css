@@ -1,0 +1,672 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vw;
+  background-color: rgb(5, 5, 73);
+
+}
+
+nav,
+main,
+footer {
+  background-color: #7070ff;
+  display: flex;
+  margin: 3px;
+}
+header {
+  flex: 1 1 100vw;
+  display: flex;
+  margin: 3px;
+}
+header #logo {
+  flex: 0 1 200px;
+}
+#openMenu,
+#closeMenu {
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+}
+nav {
+  flex: 1 1 100vh;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav a {
+  margin: 3%;
+  font-size: 20pt;
+}
+main {
+  flex: 1 1 100vw;
+  height: calc(100vw -224px);
+  flex-wrap: wrap;
+}
+footer {
+  flex: 1 1 100vw;
+
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*----------------Conteúdo-da-Página------------------*/
+section{
+min-height: 50vh;
+}
+
+.header-fixo{
+  position: fixed;
+  background: transparent;
+}
+.header-fixo a{
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 5px;
+}
+.header-fixo a:hover{
+  background-color:  rgb(25, 18, 121); 
+  border: 3px solid #fff;
+}
+.nav-left{
+margin-left: 100vh;
+background: transparent;
+color: #fff;
+}
+.menuPrincipal{
+  padding-left: 20px;
+}
+.logo{
+  width: 80px;
+  height: 80px;
+}
+.FotoApresentacao{
+   width: 100px;
+   height: 100px;
+}
+/*----------------Apresentação-da-página---------------*/
+ .apresentacao{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 500px);
+  flex: 1 1 100vw;
+  align-items: center;
+  overflow: auto;
+  width: 100%;
+  justify-content:space-around;
+  text-align: center;
+  padding: 100px; 
+  font-size: 2.0em;
+  color: #fff; 
+  margin: 0 auto;
+  margin-top:50px;
+ 
+}
+ 
+.apresentacao .btn{
+  color: #fff;
+  text-decoration: none;
+}
+
+.tituloApresentacao{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  margin-top: 100px;
+}
+.tituloApresentacao h2{
+  margin: 0 auto;
+}
+.paragrafo{
+  width: 100vh;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: typing 5s steps(30)  ;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+} 
+.paragrafo::after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+.btn{
+margin-top: 20px;
+height: 80px;
+width: 900px;
+margin-bottom: 200px;
+border-radius: 15px;
+border: 2px solid #fff;
+background-color: rgb(5, 5, 73);
+font-size: 1.5em;
+padding: 10px;
+color: #fff;
+text-decoration: none;
+}
+.btn:hover{
+  color: #fff;
+  background-color:  rgb(25, 18, 121); 
+  border: 3px solid #fff;
+}
+.FotoApresentacao{
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  position: relative;
+  animation: moveAvatar 5s infinite;
+}
+@keyframes moveAvatar {
+  0% {
+      top: 0px;
+      left: 0px;
+  }
+  25% {
+      top: 0px;
+      left: 0px;
+  }
+  50% {
+      top: 60px;
+      left: 0px;
+  }
+  75% {
+      top: 60px;
+      left: 0px;
+  }
+  100% {
+      top: 0px;
+      left: 0px;
+  }
+}
+/*------------Sobre--Mim--------------*/
+
+.containerSobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerSobre{
+  padding-top: 150px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: justify;
+}
+.FotoPc{
+  margin-left: 20px;
+  width:70vh; 
+  height:70vh;
+}
+
+/*------------Projetos--------------*/
+.tituloProjetos{
+  font-size: 8vh;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+.containerProjeto{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px; 
+}
+.projeto{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0px auto; 
+  padding: 15px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card{
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 11px 6px #cccc;
+  width: 40vh;
+  height: 40vh;
+  margin: 10px;
+  margin-top: 70px;
+
+}
+.card img{
+  width: 100%;
+  overflow: hidden;
+}
+.card-descricao{
+  margin: 5px;
+  font-size: 1.1rem;
+}
+.card-link{
+  font-size: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.card-link:hover{
+  color: #fff;
+  background-color:  rgb(25, 18, 121);
+  border: 2px solid #fff;
+}
+
+/*------------Habilidades--------------*/
+.containerHabilidades {
+  display: flex;
+  flex-direction: column;
+}
+.containericone{
+  display: flex;
+}
+
+.iconeHabilidades div{
+  display: inline-block;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0px auto;
+ 
+}
+.iconeHabilidades div{
+  width: 20vh;
+  height: 20vh;
+  margin: 20px;
+  box-shadow: 2px 2px 11px 6px #cccc;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.iconeImg img{
+
+      width: 200px;
+      height: 200px;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    overflow: hidden;
+}
+.iconeImg {
+  width: 60vh;
+  height: 60vh;
+}
+.iconeImg h3 {
+  display: flex;
+  color: #fff;
+  text-align: end;
+  align-self: center;
+}
+#icone1:hover,
+#icone2:hover,
+#icone3:hover,
+#icone3:hover,
+#icone4:hover,
+#icone5:hover,
+#icone6:hover{
+  background-color: rgba(5, 53, 247, 0.445);
+}
+.tituloHabilidades{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; 
+
+}
+.tituloHabilidades h2 , p{
+  margin-top: 40px;
+  font-size: 2rem;
+  margin-right: 10px;
+
+}
+.paragrafo1 ,
+.paragrafo2, 
+.paragrafo3,  
+.paragrafo4, 
+.paragrafo5, 
+.paragrafo6{
+  display: none;
+}
+
+.tituloRemove{
+  display: none;
+}
+.card:hover{
+  transform: scale(1.2);
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.card {
+  animation: slide-in 1s;
+}
+
+/*------------ Rodapé--------------*/
+.box-contato ,.box-Rede-sociais , .box-btn{
+  border: 1px solid #222222;
+  width: 100%;
+  overflow: hidden;
+}
+.container-Footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+}
+.container-Footer h3{
+  color: #fff;
+  font-size: 2.0rem;
+}
+.box-contato a:hover{
+  border-bottom: 2px solid #cccc; 
+}
+.box-contato div{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+.box-contato img{
+  width: 35px;
+  height: 35px;
+  margin: 2px;
+}
+.box-contato a{  
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  margin: 10px; 
+  padding: 2px;
+}
+.box-Rede-sociais img{
+width: 60px;
+height: 60px;
+margin: 5px;
+}
+.box-btn p {
+  font-size: 1.2rem;
+  margin-top: 0px;
+  color: #fff;
+}
+.box-btn button:hover{
+  background-color: #900;
+}
+
+.box-btn button{
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  margin-top: 5px;
+  background: #f12020;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.contatoMobile{
+  display: none;
+}
+/*----------------Mobile------------------*/
+
+@media only screen and (max-width: 923px) {
+  header{
+    order: 0;
+  }
+  main {
+    order: 1;
+  }
+
+  footer{
+    order: 3;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+  .containerSobre{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .containerSobre h2{
+    font-size: 8vh ;
+  }
+  .sobreFoto{
+    width: 40vh;
+    height: 20vh;
+  }
+  .FotoPc{
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .containerProjeto p{
+   display: none;
+  }
+  .containerProjeto h2{
+ font-size: 10vh;
+  }
+  .card h2{
+    font-size: 5vh;
+    margin: 5px;
+  }
+  .card {
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 11px 6px #cccc;
+    width: 50vh;
+    height: 60vh;
+    margin: 10px;
+}
+.containerHabilidades h2{
+  padding: 10px;
+  font-size: 2rem;
+}
+.iconeHabilidades{
+  margin-bottom: 70px;
+  padding: 5px;
+}
+.tituloHabilidades{
+  justify-content: center;
+
+}
+.tituloHabilidades p{
+  margin: 2px;
+  font-size: 1.2rem;
+}
+
+}
+@media only screen and (max-width: 717px) {
+  /*------------------------Inicio------------------------*/
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
+  .header-fixo{
+    position: relative;
+    background-color: #7070ff;
+  }
+  .nav-left{
+  background-color: rgba(65, 65, 255, 0.8);
+  backdrop-filter: blur(2px);
+  }
+  .menuPrincipal{
+    padding-left: 20px;
+  }
+  #openMenu,
+  #closeMenu {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+  }
+  #openMenu {
+    margin-left: auto;
+  }
+  #closeMenu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
+  nav {
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.3s
+  }
+  .FotoApresentacao{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+  }
+  .apresentacao  {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    min-height: 100vh;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #fff; 
+    
+  }
+  .apresentacao .btn{
+    margin: 15px auto;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: rgb(5, 5, 73);
+    font-size: 1.5em;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    }
+  .tituloApresentacao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  /*------------------------Sobre--Mim------------------------*/
+  .containerSobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .containerSobre p{
+    font-size: 1.3rem;
+  }
+  .FotoPc{
+    width:40vh; 
+    height:30vh;
+  }
+
+  /*------------------------Projetos------------------------*/
+  .containerProjeto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px 0px;
+  }
+  .tituloProjetos {
+    font-size: 2vh;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -16px;
+  }
+  .projeto{
+    padding: 0px;
+  }
+  .card{
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 11px 6px #cccc;
+    width: 40vh;
+    height: 50vh;
+    margin: 30px;
+  }
+  /*------------------------Habilidades------------------------*/
+  .containerHabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    text-align: center;
+    min-height: calc(100vh - 500px);
+  }
+  .tituloHabilidades h2 , p{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .iconeHabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+  .iconeHabilidades div {
+    width: 18vh;
+    height: 18vh;
+    margin: 20px;
+}
+  .iconeImg img{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  
+    
+  }
+  /*------------------------Rodapé------------------------*/
+  .contatoMobile{
+    display: flex;
+  }
+  .container-Footer{
+    min-height: 100vh;
+  }
+  .menuPrincipal{
+    margin: 8px;
+  }
+}

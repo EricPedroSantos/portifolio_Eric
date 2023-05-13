@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grafico.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Controle de Despesas Doméstica</title>
+</head>
+<body>
+    <div class="containerFormulario"> 
+         <h1>Controle de Despesas Doméstica</h1>
+        <form id="expenseForm">
+                <div class="categoria">
+                    <label for="category">Categoria:</label>
+                    <input type="text" id="category" required>
+                </div>
+                <div class="valor"> 
+                    <label for="amount">Valor:</label>
+                    <input type="number" id="amount" required>
+                </div>
+            <button class="btngrafico" type="submit">Adicionar Despesa</button>
+
+        </form>
+        <h2>Detalhes das Despesas</h2>
+        <table id="expenseTable">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th> Valor Gasto</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h2>Total das Despesas</h2>
+        <!-- Dentro do formulário -->
+        <span id="totalExpenses" ></span>
+    </div> 
+    <a class="btnVoltar" href=" https://ericpedrosantos.github.io/portifolio-Eric/"><img  src="/portifolio-Eric/icone/voltar.png" width="100px" alt="voltar"></a>
+
+<div class="containerFormulario">
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src="grafico.js"></script>
+
+</body>
+</html>

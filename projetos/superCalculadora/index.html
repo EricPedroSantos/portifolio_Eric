@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="superCalculadora.css" />
+    <title>Super Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="headerCalcula">
+        <h1 class="tituloCalculadora">Super Calculadora</h1>
+        <p class="paragrafoCalculadora">Entre com dois números para calcular:</p>
+       
+        <section>
+        <label class="tituloLabel"for="numA"> Primeiro Numero(A): </label>
+        <input
+          type="text"
+          name="numA"
+          id="numA"
+          placeholder="Primeiro Número:"
+        />
+        </section>
+
+        <section>
+        <label class="tituloLabel"for= "numB"> Primeiro Numero(B): </label>
+        <input
+          type="text"
+          name="numB"
+          id="numB"
+          placeholder="Segundo Número:"
+        />
+        </section>
+
+        <form  class="formbutton" id="calculadora">
+          <a class="btnVoltar" href=" https://ericpedrosantos.github.io/portifolio-Eric/"><img  src="/portifolio-Eric/icone/voltar.png" width="100px" alt="voltar"></a>
+          <input class="button" type="button" value="Calcular" id="btnCalcular" />
+          <input class="button" type="button" value="Limpar" id="btnLimpar" />
+        </form>
+      </header>
+    </div>
+<main>
+  <div id="resultado" class="containerDiv"></div>
+</main>
+      
+   
+    <script defer src="./superCalculadora.js"></script>
+  </body>
+</html>
