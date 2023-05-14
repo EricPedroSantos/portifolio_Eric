@@ -90,3 +90,22 @@ button {
   .btnVoltar{
     animation: slide-in 1s;
   }
+
+  .containerSobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .containerSobre{
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  .FotoPc{
+    width:50vh; 
+    height:50vh;
+    border-radius: 100%;
+  }
