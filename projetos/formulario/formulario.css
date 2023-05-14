@@ -103,6 +103,7 @@ button {
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
+    border: 3px solid #fff;
   }
   .FotoPc{
     width:50vh; 
